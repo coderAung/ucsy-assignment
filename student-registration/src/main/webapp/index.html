@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Student Registration</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	
+	<div class="container">
+		<form action="student-regis" method="post">
+			<div class="input-container">
+				<label for="name">Name</label>
+				<input type="text" id="name" name="name" placeholder="Enter Student Name"/>
+			</div>
+			<div class="input-container">
+				<label for="roll-no">Roll No.</label>
+				<input type="number" id="roll-no" name="rollNo" placeholder="Enter Student Roll No."/>
+			</div>
+			<div class="input-container">
+				<label for="phone">Phone No.</label>
+				<input type="tel" id="phone" name="phone" placeholder="Enter Phone No."/>
+			</div>
+			<div class="subject-container">
+				<span class="radio-container">
+					<label for="ke">Knowledge Engineering</label>
+					<input name="subject" id="ke" type="radio" value="Knowledge Engineering">
+				</span>|
+				<span class="radio-container">
+					<label for="se">Software Engineering</label>
+					<input name="subject" id="se" type="radio" value="Software Engineering">
+				</span>|
+				<span class="radio-container">
+					<label for="bis">Business Information System</label>
+					<input name="subject" id="bis" type="radio" value="Business Information System">
+				</span>				
+			</div>
+			<div class="btn-container">
+				<button type="submit">Submit</button>
+			</div>
+		</form>
+	</div>
+</body>
+</html>
