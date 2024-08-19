@@ -6,7 +6,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Blog</title>
 <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 <body>
@@ -63,10 +63,10 @@
 										<div class="card-title border-bottom pb-2">
 											<span class="btn btn-sm btn-success float-end">${post.category}</span>
 											<h5>${post.title}</h5>
-											<small class="text-muted">${post.author}</small>
-											 . 
+											<small class="text-muted">${post.author} | </small>
+
 											 <small class="text-muted">
-											 	${post.postedDate.format(DateTimeFormatter.ofPattern("dd-MM"))}
+											 	${post.postedDate.format(formatter)}
 											 </small>
 										</div>
 										<div class="card-text">${post.description}</div>

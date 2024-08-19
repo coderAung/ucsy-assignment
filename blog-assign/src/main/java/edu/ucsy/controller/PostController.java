@@ -5,6 +5,7 @@ import java.io.IOException;
 import edu.ucsy.entity.Post;
 import edu.ucsy.model.PostModel;
 import edu.ucsy.model.PostModelImpl;
+import edu.ucsy.utils.DateTimeHelper;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
@@ -21,6 +22,7 @@ public class PostController extends HttpServlet {
 	@Override
 	public void init() throws ServletException {
 		postModel = new PostModelImpl();
+		getServletContext().setAttribute("formatter", DateTimeHelper.FORMATTER);
 	}
 
 	@Override
